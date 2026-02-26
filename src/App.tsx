@@ -74,7 +74,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <img src="/SYSTEMPROBE_LOGO_LANDSCAPE.png" alt="SystemProbe Security" className="h-8" />
           <div className="flex items-center gap-8">
-            <a href="#features" className="text-gray-300 hover:text-cyan-400">Features</a>
+            <a href="/window" className="text-gray-300 hover:text-cyan-400">Features</a>
             <a href="#support" className="text-gray-300 hover:text-cyan-400">Support</a>
             <a href="#business" className="text-gray-300 hover:text-cyan-400">For Business</a>
           </div>
