@@ -104,8 +104,8 @@ function TermsOfService() {
 
             <h3 className="text-xl font-semibold text-white mb-3 mt-6">2.2 Premium Version</h3>
             <p className="mb-4">
-              Premium subscribers receive an additional license to use advanced features on up to the number of 
-              devices specified in their subscription plan.
+              Premium users receive an additional license to use advanced features on up to the number of 
+              devices specified in their plan.
             </p>
 
             <h3 className="text-xl font-semibold text-white mb-3 mt-6">2.3 License Restrictions</h3>
@@ -142,38 +142,17 @@ function TermsOfService() {
             </p>
           </section>
 
-          {/* Subscription and Payment */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-4">4. Subscription and Payment</h2>
-            
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">4.1 Premium Subscriptions</h3>
-            <p className="mb-4">Premium subscriptions are billed on a recurring basis (monthly or annually) until cancelled.</p>
-
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">4.2 Pricing</h3>
-            <p className="mb-4">Prices are subject to change with 30 days notice. Changes do not affect your current subscription period.</p>
-
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">4.3 Refunds</h3>
-            <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-              <li>Free version: No refunds applicable</li>
-              <li>Premium: 30-day money-back guarantee for first-time subscribers</li>
-              <li>Refunds for subsequent renewals are at our discretion</li>
-            </ul>
-
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">4.4 Cancellation</h3>
-            <p>You may cancel your subscription at any time. Cancellation takes effect at the end of the current billing period.</p>
-          </section>
-
           {/* User Responsibilities */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">5. User Responsibilities</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">4. User Responsibilities</h2>
             
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">5.1 Lawful Use</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">4.1 Lawful Use</h3>
             <p className="mb-4">You agree to use our Services only for lawful purposes and in accordance with these Terms.</p>
 
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">5.2 Backups</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">4.2 Backups</h3>
             <p className="mb-4">While our software aims to protect your system, you are solely responsible for backing up your data.</p>
 
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">5.3 Prohibited Activities</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">4.3 Prohibited Activities</h3>
             <p className="mb-3">You may not:</p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Use the Services to violate any laws or regulations</li>
@@ -186,21 +165,21 @@ function TermsOfService() {
 
           {/* Intellectual Property */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">6. Intellectual Property</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">5. Intellectual Property</h2>
             
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">6.1 Ownership</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">5.1 Ownership</h3>
             <p className="mb-4">SystemProbe Security and all related intellectual property rights remain our exclusive property.</p>
 
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">6.2 Trademarks</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">5.2 Trademarks</h3>
             <p className="mb-4">Our trademarks, logos, and service marks may not be used without our prior written consent.</p>
 
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">6.3 Feedback</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">5.3 Feedback</h3>
             <p>If you provide feedback or suggestions, we may use them without any obligation to you.</p>
           </section>
 
           {/* Disclaimer */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">7. Disclaimer of Warranties</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">6. Disclaimer of Warranties</h2>
             
             <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6 my-6">
               <p className="font-semibold text-white mb-4">THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND.</p>
@@ -217,7 +196,7 @@ function TermsOfService() {
 
           {/* Limitation of Liability */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">8. Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">7. Limitation of Liability</h2>
             
             <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6 my-6">
               <p className="font-semibold text-white mb-4">TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR TOTAL LIABILITY TO YOU SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.</p>
@@ -234,61 +213,49 @@ function TermsOfService() {
 
           {/* Termination */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">9. Termination</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">8. Termination</h2>
             
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">9.1 Termination by You</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">8.1 Termination by You</h3>
             <p className="mb-4">You may terminate your account at any time by contacting customer support.</p>
 
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">9.2 Termination by Us</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">8.2 Termination by Us</h3>
             <p className="mb-3">We may suspend or terminate your access immediately if you:</p>
             <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
               <li>Violate these Terms</li>
               <li>Engage in fraudulent activity</li>
-              <li>Fail to pay subscription fees</li>
+              <li>Fail to pay applicable fees</li>
               <li>Use the Services in a way that harms us or others</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">9.3 Effect of Termination</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">8.3 Effect of Termination</h3>
             <p className="mb-3">Upon termination:</p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Your license to use the software ends immediately</li>
               <li>You must uninstall the software from all devices</li>
               <li>We may delete your account data after 30 days</li>
-              <li>Premium subscriptions are not refunded except as specified</li>
+              <li>Premium features are not refunded except as specified</li>
             </ul>
           </section>
 
           {/* Dispute Resolution */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">10. Dispute Resolution</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">9. Dispute Resolution</h2>
             
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">10.1 Informal Resolution</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">9.1 Informal Resolution</h3>
             <p className="mb-4">Contact us first to resolve any disputes informally.</p>
 
-            <h3 className="text-xl font-semibold text-white mb-3 mt-6">10.2 Governing Law</h3>
+            <h3 className="text-xl font-semibold text-white mb-3 mt-6">9.2 Governing Law</h3>
             <p>These Terms are governed by the laws of the State of California, USA, without regard to conflict of law provisions.</p>
           </section>
 
           {/* Changes to Terms */}
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">11. Changes to Terms</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">10. Changes to Terms</h2>
             <p>
               We may modify these Terms at any time. We will notify you of material changes via email or through 
               the software. Continued use after changes constitutes acceptance.
             </p>
           </section>
-
-          {/* Contact
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-4">12. Contact Information</h2>
-            <p className="mb-4">For questions about these Terms:</p>
-            <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6 space-y-2">
-              <p><strong className="text-white">Email:</strong> legal@systemprobe.com</p>
-              <p><strong className="text-white">Address:</strong> SystemProbe Security Inc., 123 Security Boulevard, San Francisco, CA 94102, USA</p>
-              <p><strong className="text-white">Phone:</strong> +1 (555) 123-4567</p>
-            </div>
-          </section>
-          */}
 
           <div className="border-t border-gray-700 pt-8 mt-12">
             <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-lg p-6 text-center">
