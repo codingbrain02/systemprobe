@@ -202,7 +202,7 @@ function Window({
               <div className="pt-4 border-t border-gray-200">
                 <button
                   onClick={handleUpdate}
-                  className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition-colors flex items-center justify-center gap-2"
+                  className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition-colors flex items-center justify-center gap-2 hover:cursor-pointer"
                 >
                   Update Drivers Now
                 </button>

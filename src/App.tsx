@@ -136,7 +136,7 @@ function App() {
               </div>
             </div>
 
-            <button className="w-full py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg text-lg transition-all hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-3">
+            <button className="w-full py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg text-lg transition-all hover:shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-3 hover:cursor-pointer">
               <svg
                 width="24"
                 height="24"
